@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid-wrapper.</title>
+    <style>
+        .grid-wrapper{
+            min-width: 100px;
+            border-radius: 4px ;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .grid-wrapper{
+            display: flex;
+            grid-template-rows: repeat(5, auto);
+            grid-template-columns: 240px 1fr 2fr;
+            gap: 1rem;
+        }
+        header{
+            background-color: red;
+            width: 200px;
+            text-align: center;  
+             border: 3px solid; 
+             box-shadow: 1px 2px 3px ;
+             margin: 20px;
+            font-size: 30px;border-radius: 10px 10px 10px ;
+
+        }
+        article{
+            background: yellow;  font-size: 30px;
+            font-size: 30px;border-radius: 10px 10px 10px ;
+            width: 200px; 
+            border: 3px solid;
+            text-align: center; 
+            box-shadow: 1px 2px 3px ;
+            margin: 20px;
+
+        }
+        section{
+            background: green; 
+             font-size: 30px;
+             border-radius: 10px 10px 10px ;
+             width: 200px;   
+              border: 3px solid;
+             text-align: center; 
+             box-shadow: 1px 2px 3px ;
+             margin: 20px;
+        }
+        nav{
+            background-color: aqua;
+            font-size: 30px;
+             border-radius: 10px 10px 10px ;
+             width: 200px;   
+              border: 3px solid;
+             text-align: center; 
+             box-shadow: 1px 2px 3px ;
+             margin: 20px;
+        }
+   
+    </style>
 </head>
 <body>
-    <h1>Programação 001:</h1>
+    <h1>Programação 001:Grid-wrapper</h1>
+    <div class="grid-wrapper">
+        <header>Header</header>
+        <section>section</section>
+        <nav>nav</nav>
+        <article>article</article>
+    </div>
 </body>
 </html>
